@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Total Payment</name>
+   <tag></tag>
+   <elementGuidId>9876d936-2261-432c-9416-e34ee82e505e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#total_pembayaran</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'total_pembayaran']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Total Payment&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>9a07faf1-a597-45da-9377-cfca91f80dbf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>number</value>
+      <webElementGuid>5bf55a72-f36d-46db-9f11-79747dee5d56</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>min</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>448e0c9f-355a-43f9-9a3b-5c5ddedd5ed7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>total_pembayaran</value>
+      <webElementGuid>32440d33-69d6-41af-9639-f35b9c34bc13</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>total_pembayaran</value>
+      <webElementGuid>3141e4b2-6cbf-4bc0-89a6-7a1093b54774</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-full h-12 px-4 rounded-2xl border border-border</value>
+      <webElementGuid>641a4820-34bd-4c3e-92d6-75c3c1e4d28d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-61b2d4cb880cf3d31052564689fffc50</value>
+      <webElementGuid>aeedd31a-85b9-4e5a-9ed5-aadf3164098a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'total_pembayaran']</value>
+      <webElementGuid>5d1b2364-588c-44f1-b6d3-ec3ef3c1d1c7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'total_pembayaran']</value>
+      <webElementGuid>6d053e0d-5668-45a9-8f72-3c1736a1821c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'number' and @id = 'total_pembayaran' and @name = 'total_pembayaran']</value>
+      <webElementGuid>3e62e5ae-5f4f-4ec1-9d28-82fed1b9aa3c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

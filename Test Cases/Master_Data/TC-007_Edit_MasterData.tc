@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-007_Edit_MasterData</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dfd58bd6-f4d7-4a51-b807-ebacbf1814e4</testCaseGuid>
+</TestCaseEntity>
