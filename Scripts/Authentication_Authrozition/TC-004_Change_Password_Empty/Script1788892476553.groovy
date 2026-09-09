@@ -18,17 +18,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Authentication_Authrozition/Login/Login_Superadmin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Page_Laravel/summary_Master Data'))
+WebUI.navigateToUrl('http://127.0.0.1:8000/login')
 
-WebUI.click(findTestObject('Page_Laravel/a_Task Status'))
+WebUI.click(findTestObject('Page_Login/a_Forgot Password'))
 
-WebUI.click(findTestObject('Page_Laravel/a_Edit'))
+WebUI.click(findTestObject('Page_Daily Scrum/button_Reset Password'))
 
-WebUI.setText(findTestObject('Page_Laravel/input_Status Name'), 'has planned')
-
-WebUI.click(findTestObject('Page_Laravel/button_Save (1)'))
-
-WebUI.assertElementText(findTestObject('Page_Laravel/div_Data berhasil diperbarui'), 'Data berhasil diperbarui', 0)
+WebUI.assertElementText(findTestObject('Page_Daily Scrum/Page_Daily Scrum/p_The email field is required'), 'The email field is required.', 
+    0)
 

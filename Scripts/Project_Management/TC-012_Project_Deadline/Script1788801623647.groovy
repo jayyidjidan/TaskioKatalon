@@ -22,11 +22,8 @@ WebUI.openBrowser(null)
 
 WebUI.navigateToUrl('http://127.0.0.1:8000/login')
 
-WebUI.setText(findTestObject('Page_Login/input_Masukkan username atau email (5)'), 'pm@plainthing.com')
 
-WebUI.setEncryptedText(findTestObject('Page_Login/input_password (5)'), '8SQVv/p9jVTHLrggi8kCzw==')
 
-WebUI.click(findTestObject('Page_Login/button_Login (5)'))
 
 WebUI.click(findTestObject('Page_Laravel/summary_Project Management'))
 

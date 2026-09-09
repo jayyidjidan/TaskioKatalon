@@ -22,11 +22,7 @@ WebUI.openBrowser(null)
 
 WebUI.navigateToUrl('http://127.0.0.1:8000/login')
 
-WebUI.setText(findTestObject('Page_Login/input_Masukkan username atau email (4)'), 'pm@plainthing.com')
-
-WebUI.setEncryptedText(findTestObject('Page_Login/input_password (4)'), '8SQVv/p9jVTHLrggi8kCzw==')
-
-WebUI.click(findTestObject('Page_Login/button_Login (4)'))
+WebUI.callTestCase(findTestCase('Authentication_Authrozition/Login/Login_PM'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Laravel/a_Projects'))
 

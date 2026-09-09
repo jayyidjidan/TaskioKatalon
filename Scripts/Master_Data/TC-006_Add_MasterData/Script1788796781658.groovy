@@ -18,27 +18,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(null)
-
-WebUI.navigateToUrl('http://127.0.0.1:8000/login')
-
-WebUI.setText(findTestObject('Page_Login/input_Masukkan username atau email (3)'), 'superadmin@plainthing.com')
-
-WebUI.setEncryptedText(findTestObject('Page_Login/input_password (3)'), '8SQVv/p9jVTHLrggi8kCzw==')
-
-WebUI.click(findTestObject('Page_Login/button_Login (3)'))
+WebUI.callTestCase(findTestCase('Authentication_Authrozition/Login/Login_Superadmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Laravel/summary_Master Data (1)'))
 
 WebUI.click(findTestObject('Page_Laravel/a_Task Status (1)'))
 
-WebUI.click(findTestObject('Page_Laravel/a_Edit'))
+WebUI.click(findTestObject('Page_Laravel/button_Add Task Status'))
 
 WebUI.setText(findTestObject('Page_Laravel/input_Status Name (1)'), 'Not Planned')
 
 WebUI.click(findTestObject('Page_Laravel/button_Save (1)'))
 
-WebUI.click(findTestObject('Page_Laravel/div_Data berhasil diperbarui'))
-
-WebUI.assertElementText(findTestObject('Page_Laravel/div_Data berhasil diperbarui'), 'Data berhasil diperbarui', 0)
+WebUI.assertElementText(findTestObject('Page_Laravel/div_Data berhasil ditambahkan'), 'Data berhasil ditambahkan', 0)
 

@@ -24,11 +24,11 @@ WebUI.navigateToUrl('http://127.0.0.1:8000/login')
 
 WebUI.click(findTestObject('Page_Login/a_Forgot Password'))
 
-WebUI.setText(findTestObject('Page_Daily Scrum/input_Email'), 'oliviafauziah@student.ub.ac.id')
+WebUI.setText(findTestObject('Page_Daily Scrum/input_Email'), 'dimas@example.com')
 
-WebUI.setEncryptedText(findTestObject('Page_Daily Scrum/input_New Password'), '5NQKTv0lxNMW5AJUaTxaHA==')
+WebUI.setEncryptedText(findTestObject('Page_Daily Scrum/input_New Password'), 'FbCdEAQDhtZTg5kdQ8Wf3A==')
 
-WebUI.setEncryptedText(findTestObject('Page_Daily Scrum/input_Confirm Password'), '5NQKTv0lxNMW5AJUaTxaHA==')
+WebUI.setEncryptedText(findTestObject('Page_Daily Scrum/input_Confirm Password'), 'FbCdEAQDhtZTg5kdQ8Wf3A==')
 
 WebUI.click(findTestObject('Page_Daily Scrum/button_Reset Password'))
 

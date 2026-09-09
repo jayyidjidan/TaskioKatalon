@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC-006_Add_MasterData</name>
+   <name>TC-009_Empty_Field</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>5d0b13aa-a9e5-4fe2-835f-c2d701f3cde9</testCaseGuid>
+   <testCaseGuid>d115ec62-a5ea-46cd-af57-77da0d4824ef</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>329bfc2a-1fe0-4b44-ba32-e9b6a06cccff</variableId>
+      <variableId>e26d200f-bb1a-4c84-a237-edc32e8d2277</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'superadmin@gmail.com'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>329bfc2a-1fe0-4b44-ba32-e9b6a06cccff</id>
+      <id>e26d200f-bb1a-4c84-a237-edc32e8d2277</id>
       <masked>false</masked>
-      <name>Superadmin_Email</name>
+      <name>variable</name>
    </variable>
 </TestCaseEntity>

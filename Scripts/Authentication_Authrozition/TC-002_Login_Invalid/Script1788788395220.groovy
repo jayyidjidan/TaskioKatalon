@@ -22,11 +22,9 @@ WebUI.openBrowser(null)
 
 WebUI.navigateToUrl('http://127.0.0.1:8000/login')
 
-WebUI.setText(findTestObject('Page_Login/input_Masukkan username atau email (1)'), 'hihanghoheng14@gmail.com')
+WebUI.setText(findTestObject('Page_Login/input_Masukkan username atau email'), 'jidan@gmail.com')
 
-WebUI.setEncryptedText(findTestObject('Page_Login/input_password (1)'), 'wZu8yZL5PPw=')
-
-WebUI.click(findTestObject('Page_Login/button_Login (1)'))
+WebUI.setEncryptedText(findTestObject('Page_Login/input_password'), 'wnyfFS7E83DgQTXXzpli+Q==')
 
 WebUI.click(findTestObject('Page_Login/div_Invalid username_email or password'))
 

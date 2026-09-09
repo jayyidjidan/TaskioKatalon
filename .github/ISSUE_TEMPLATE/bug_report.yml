@@ -1,0 +1,102 @@
+name: 🐞 Bug Report
+description: Report a bug found during testing
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in every section below. Be specific — the goal is that a developer can reproduce this without asking you anything.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: Impact on the system (not how urgent it feels)
+      options:
+        - Critical — blocks core functionality / data loss / security, no workaround
+        - High — major feature broken, workaround exists
+        - Medium — minor feature issue, does not block usage
+        - Low — cosmetic / text / UI polish issue
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, OS, app URL/branch, staging or local
+      placeholder: "Chrome 128, Windows 11, local (127.0.0.1:8000), branch: main"
+    validations:
+      required: true
+
+  - type: input
+    id: test-case-ref
+    attributes:
+      label: Test Case Reference
+      description: Link back to the Case-ID this came from, if applicable
+      placeholder: "TC-031"
+    validations:
+      required: false
+
+  - type: textarea
+    id: precondition
+    attributes:
+      label: Precondition
+      description: State required before following the steps (login role, existing data, etc.)
+      placeholder: "Logged in as Project Manager. Project total price is Rp 50,000,000 with Rp 35,000,000 already paid."
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Numbered, exact, one action per line
+      placeholder: |
+        1. Open Project Detail page
+        2. Click "Tambah Transaksi"
+        3. Input nominal Rp 20,000,000
+        4. Click "Save"
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Result
+      description: What should happen
+      placeholder: "System shows an error and rejects the transaction."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Result
+      description: What actually happened — symptoms only, not your guess at the cause
+      placeholder: "Transaction is saved. Total paid exceeds the project price. No error is shown."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Drag and drop screenshots or a screen recording here
+      placeholder: "Paste screenshot(s) / recording link here"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submit checklist
+      options:
+        - label: Steps above are specific enough for someone else to reproduce this
+          required: true
+        - label: This ticket covers exactly one bug (not several bundled together)
+          required: true
+        - label: Severity reflects impact, not annoyance
+          required: false
